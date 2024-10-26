@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="keywords" content="Idle Fantasy-PlayToEarn & Nft,NFT,Strategy,Idle,Card,Crypto,Blockchain,Challenges,Earn,Axie,CryptoKitties,Sandbox,DeFi,Gods,Mir">
+    <meta name="description" content="《Idle Fantasy-PlayToEarn & Nft》: Every Challenge is an Opportunity for Wealth and Adventure in NFT! Download Now!">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1,user-scalable=no" />
+    <title>《Idle Fantasy-PlayToEarn & Nft》-Every Challenge is an Opportunity for Wealth and Adventure in NFT</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/slick.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .title-bar {
+            width: 100%;
+            height: 80%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            align-content: center;
+            margin-top: 0px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .title-icon {
+            width: 100%;
+            height: 80%;
+            margin-left: 10px;
+        }
+        .title-icon img {
+            height: 100%;
+        }        
+        .iconLogo {
+            margin-left: 30px;
+
+        }
+        .title-btn {
+            width: 60px;
+            margin-right: 10px;
+            display: inline-block;
+            cursor: pointer;
+        }
+        .kf-btn {
+            position: absolute;
+            right: 10px;
+            z-index: 10;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .title-bar {
+                width: 100%;
+            }
+            .iconLogo {
+                margin-left: 5px;
+            }
+            .kf-btn img {
+                width: 50%;
+                height: 50%;
+                margin-top: 0px;
+            }
+        }
+        /*按钮样式*/
+        .show_AIhelp {
+            position: fixed;
+            bottom: 1rem;
+            right: 1rem;
+            border-radius: 4px;
+            border: none;
+            padding: 10px 30px;
+            background: #f9c633;
+            color: #444;
+            outline: none;
+        }
+        /*聊天界面*/
+        .elvaBox {
+            width: 375px;
+            height: 500px;
+            position: fixed;
+            right: 1rem;
+            bottom: 4rem;
+            background: #fff;
+            z-index: 100;
+        }
+        /*关闭按钮（PC端网页）*/
+        .close {  
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            width: 30px;
+            height: 30px;
+            color: #fff;
+            background: #f9c633;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+        
+        .close:before {
+            position: absolute;
+            content: '';
+            width: 20px;
+            height: 2px;
+            background: #fff;
+            transform: rotate(45deg);
+            top: 14px;
+            left: 6px;
+        }
+        
+        .close:after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 2px;
+            background: #fff;
+            transform: rotate(-45deg);
+            top: 12px;
+            left: 6px;
+        }
+        
+    </style>
+</head>
+
+<body>
+  <div class="header">
+    <div class='title-bar'>
+        <div class='title-icon'><img src='images/icon.png' /><img class="iconLogo" src='images/logo.png'></div>
+        <!-- <a href='javascript:openAIHelp()'></a> -->
+        <!-- <div class="kf-btn" onclick="clickQQ()"><img src='images/icon_kf.png'></div> -->
+        <!-- <div class="kf-btn"><a href='javascript:openAIHelp()'><img src='images/icon_kf.png'></a></div> -->
+        <!-- <div class='title-btn' onclick="clickIosOrDown()"><img src="images/download.png" alt="downloadGame" /></div> -->
+        <!-- <div class='title-btn' onclick="clickLink(event,'3','pc-ios')"><img src="images/download.png" alt="downloadGame" /></div> -->
+
+        <!-- <div class='title-btn'>  <a href="docs/whitePaper.pdf" target="_blank">    <img src="images/button/btn-whitePaper.png" alt="downloadGame" /> </a></div> -->
+        <div class='title-btn' onclick="clickLink(event,'3','whitePaper')"><img src="images/button/btn-whitePaper.png" alt="downloadGame" /></div>
+        <div class='title-btn' onclick="clickLink(event,'3','discord')"><img src="images/button/btn-discord.png" alt="downloadGame" /></div>
+        <div class='title-btn' onclick="clickLink(event,'3','twitter')"><img src="images/button/btn-twitter.png" alt="downloadGame" /></div>
+        <div class='title-btn' onclick="clickLink(event,'3','telegramGrop')"><img src="images/button/btn-telegram.png" alt="downloadGame" /></div>
+        <div class='title-btn' onclick="window.location.href='mailto:tgy@gwsvip.com'"><img src="images/button/btn-email.png" alt="downloadGame" /></div>
+    </div>
+  </div>
+
+  <div id='bgDiv' class="bg">
+    <div class="container">
+      <div class="img-box">
+        <div style="visibility:hidden;"><img class="holderImg" src="images/holder.png" alt="Idle Fantasy-PlayToEarn & Nft"></div>
+        <div id="toastList">
+          game will coming soon。
+        </div>
+        <div class="clearfix btn-box">
+            <!-- onclick="clickLink(event,'2','ios')" -->
+            <!--
+            <div class="col-xs-6" onclick="clickIosOrDown()" id="clickIos"><img src="images/button/btn01.png" alt="iOS《Idle Fantasy-PlayToEarn & Nft》"></div>
+            <div class="col-xs-6" onclick="clickIosOrDown()"><img src="images/button/btn02.png" alt="Android《Idle Fantasy-PlayToEarn & Nft》"></div>
+            <div class="col-xs-6" onclick="clickIosOrDown()"><img src="images/button/btn03.png" alt="h5Play《Idle Fantasy-PlayToEarn & Nft》"></div>
+            -->
+            <!-- div class="col-xs-6" onclick="clickLink(event,'2','wx')"><img src="images/button/btn03.png" alt="h5Play《IDLE GOG2：Origins"></div> -->
+            <!-- div style="float: left;display: flex;width: 100%;justify-content: center;"> -->
+            <!--div class="col-xs-6" onclick="clickLink(event,'2','pc')" ><img src="images/button/btn04.png" alt="google《IDLE GOG2：Origins"></div> -->
+            <!--div class="col-xs-6" onclick="clickLink(event,'2','pc')"><img src="images/button/btn05.png" alt="steam《IDLE GOG2：Origins"></div> -->
+            <p class="col-xs-text" data-translate="token_description">Join our CEC token-powered game on the TON chain! Play to earn and grow your token assets together, where fun meets real rewards!</p>
+            <div class="col-xs-6" onclick="clickLink(event,'2','telegram')"><img src="images/button/btnPlayNow_telegram.png" alt="steam《IDLE GOG2：Origins"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="back-box"></div>
+  <div class="back-c">
+    <div class="container" >
+      <div class="title minText-center"><img src="images/logo.png" ></div>
+      <div class="width-sm">
+        <!-- Swiper -->
+        <div class="swiper-container gallery-top" onclick="clickImg(event)" >
+            <div class="swiper-wrapper">
+               <div class="swiper-slide">
+                    <div class="width-sx">
+                        <div class="img-xs"><img src="images/p2/01.jpg"></div>
+                        <div class="img-txt">Embark on the Cloud Summit Tower and commence your Play to Earn journey. In this innovative NFT gameplay, each level is filled with challenges and rewards. The higher you climb, the greater the potential returns. Utilize strategy and skills to overcome opponents while earning substantial rewards. Every victory signifies not just progress in the game but also an opportunity for your wealth to grow. Begin your adventure right away and ascend to the pinnacle of glory!<br></div>
+                    </div>
+               </div>
+               <div class="swiper-slide">
+                    <div class="width-sx">
+                      <div class="img-xs"><img src="images/p2/02.jpg"></div>
+                      <div class="img-txt">
+                        <p >The Dragon Hunt dungeon challenges your courage and skills. You will battle against five powerful dragons: Water Dragon, Fire Dragon, Wood Dragon, Light Dragon, and Dark Dragon, striving for victory in these intense battles. Players can freely combine equipment and skills to create the best battle strategy for their heroes. The heroes' combat abilities will determine whether they can successfully hunt the dragons and become true heroes.</p>
+                      </div>
+                    </div>
+               </div>
+               <div class="swiper-slide">
+                    <div class="width-sx">
+                      <div class="img-xs"><img src="images/p2/03.jpg"></div>
+                      <div class="img-txt">The Battle of Troy is an exciting PvP gameplay where players can showcase their combat skills and strategic abilities by participating in real-time battles. By selecting and equipping their heroes with the best gear and developing a sound battle plan, players can defeat their opponents and emerge victorious. Additionally, by completing challenges and quests, players can continuously enhance their strength and climb the ranks of the leaderboard. In Troy Battle, players will experience endless combat fun and highly challenging matches.</div>
+                    </div>
+               </div>
+               <div class="swiper-slide">
+                    <div class="width-sx">
+                      <div class="img-xs"><img src="images/p2/04.jpg"></div>
+                      <div class="img-txt">With the power of the five elements, summon your desired hero and embark on a legendary journey of summoning! Every summoning will bring you endless surprises. With the blessing of the heroes, your team will become stronger and capable of completing more challenges. Can you meet rare heroes and perfectly form your team during the summoning, becoming the most dazzling commander in the continent of Genesis?</div>
+                    </div>
+               </div>
+               <!--
+               <div class="swiper-slide">
+                    <div class="width-sx">
+                      <div class="img-xs"><img src="images/p2/05.jpg"></div>
+                      <div class="img-txt">Explore the twelve constellations and discover hidden treasures. Each constellation presents unique challenges that require combat skills and puzzle-solving abilities to unlock its mysteries. The Twelve Constellations is a strategic gameplay that offers players an unprecedented thrill of challenge and excitement.</div>
+                    </div>
+               </div>
+               <div class="swiper-slide">
+                    <div class="width-sx">
+                      <div class="img-xs"><img src="images/p2/06.jpg"></div>
+                      <div class="img-txt">Enter the Endless Abyss and embark on an adventure like no other. Every corner is filled with mystery and the unknown. As you delve deeper, discover new secrets, challenge yourself, and push forward. This is a test of courage and wisdom, as well as an opportunity to find beautiful landscapes and treasures.</div>
+                    </div>
+               </div>
+               <div class="swiper-slide">
+                    <div class="width-sx">
+                      <div class="img-xs"><img src="images/p2/07.jpg"></div>
+                      <div class="img-txt">Explore the unknown world and uncover the secrets of ancient ruins. In this archaeological adventure, you will face various challenges and discover amazing truths while exploring. Combine strategic thinking with brave action to preserve the truth of the ruins forever.</div>
+                    </div>
+               </div>
+               -->
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="width-lg">
+        <div class="swiper-container gallery-thumbs">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><div class="slick-b"><img src="images/p2/01.jpg">Magic Mirror Hall</div></div>
+                <div class="swiper-slide"><div class="slick-b"><img src="images/p2/02.jpg" >Dragon Hunt</div></div>
+                <div class="swiper-slide"><div class="slick-b"><img src="images/p2/03.jpg">Battle of Troy</div></div>
+                <div class="swiper-slide"><div class="slick-b"><img src="images/p2/04.jpg">Hero Summoning</div></div>
+                <!--
+                <div class="swiper-slide"><div class="slick-b"><img src="images/p2/05.jpg">Zodiac Maze</div></div>
+                <div class="swiper-slide"><div class="slick-b"><img src="images/p2/06.jpg">Endless Abyss</div></div>
+                <div class="swiper-slide"><div class="slick-b"><img src="images/p2/07.jpg">Relics</div></div>
+                -->
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="bottom">
+    <div class="p3">
+      <div class="logoBottom"><img src="images/logo.png" ></div>
+            <div class="swiper">
+                <div class="animalImg">
+                    <div class="swiper-wrapper ">
+                        <div class="swiper-slide"><img src="images/p3/3-01.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/p3/3-02.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/p3/3-03.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/p3/3-04.jpg" alt=""></div>
+                        <!--
+                        <div class="swiper-slide"><img src="images/p3/3-05.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/p3/3-06.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/p3/3-07.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/p3/3-08.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/p3/3-09.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/p3/3-10.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/p3/3-11.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/p3/3-12.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/p3/3-13.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/p3/3-14.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/p3/3-15.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/p3/3-16.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/p3/3-17.jpg" alt=""></div>
+                        -->
+                    </div>
+                </div>
+                <div class="swiper-button-next"><img src="images/jt.png" alt=""></div>
+                <div class="swiper-button-prev"><img src="images/jt.png" alt=""></div>
+            </div>
+      <!-- <div class="video-box">
+        <video src="images/p1.mp4" controls="controls" width="100%" height="100%">
+        your browser does not support the video tag
+        </video>
+      </div> -->
+      <div class="bottom-txt text-center"><img src="images/wz-b.png"></div>
+      <div class="footer text-center">
+        <br/>GameWinner (HongKong) Network Technology Co., Limited. All Rights Reserved.<br>
+                    FLAT B5，1/F MANNING IND. BLDG 116-118 HOW MING STREET KWUN TONG KL,HongKong<br> <img src="images/icon01.png"> <a href="https://www.facebook.com/Idlefantasynft" style="color: white;">https://www.facebook.com/Idlefantasynft</a>
+    </div>
+  </div>
+	<div id="bigImg" onclick="clickBigImg()">
+	<div style="background:#000;opacity:0.7;width:100vw;height:100vh;position: fixed;left: 0;top: 0;"></div>
+		<img id="bigImgimg" src="" alt="clickShowBigImg">
+		<img id="wxcodebgimg" src="" alt="clickShowBigImg">
+        <img id="wxcodebg" src="images/wxcodebg.png" alt="wxcodebg">
+	</div>
+  <img id="open" src="images/open.jpg" alt="open">
+</body>
+
+<script src='js/elvactrl.js'></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/slick.js"></script>
+
+<script>
+    var u = window.navigator.userAgent;
+    function clickIosOrDown (){
+      $('#toastList').show()
+      setTimeout(data=>{
+        $('#toastList').hide()
+      },2000)
+    }
+    //检查是否运行在Android设备
+    function checkIsAndroid(){
+        return u.indexOf('Android')>-1 || u.indexOf('Adr')>-1;
+    }
+
+    //检查是否运行在iOS设备
+    function checkIsIOS(){
+        return !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+    }
+
+    //检查设备平台（android/ios/pc）
+    function checkDevicePlatform(){
+        if(checkIsAndroid()) return "android";
+        else if(checkIsIOS()) return "ios";
+        return "pc";
+    }
+    /*点击显示大图*/
+    function clickImg (e){
+      document.getElementById("wxcodebgimg").style.display = 'none'
+      document.getElementById("wxcodebg").style.display = 'none'
+      document.getElementById("bigImgimg").style.display = 'block'
+      document.getElementById("bigImgimg").setAttribute('src', e.srcElement.currentSrc)
+      document.getElementById("bigImg").style.display = 'block'
+      document.getElementById("bigImg").style.position = 'fixed'
+      document.getElementById("bigImg").style.top = '10vh'
+      document.getElementById("bigImg").style.left = '10vw'
+    }
+    /*点击显示微信二维码*/
+    function clickWxCode (){
+      document.getElementById("wxcodebg").style.display = 'block'
+      document.getElementById("wxcodebgimg").style.display = 'block'
+      document.getElementById("bigImgimg").style.display = 'none'
+      document.getElementById("wxcodebgimg").setAttribute('src', 'images/wxcode.png')
+      document.getElementById("bigImg").style.display = 'block'
+      document.getElementById("bigImg").style.position = 'fixed'
+    }
+    function clickBigImg(){
+        document.getElementById("bigImg").style.display = 'none'
+        document.getElementById("wxcodebg").style.display = 'none'
+    }
+    //打开aihelp
+    function openAIHelp(){
+        var conf = {
+            style: 2,
+            domain: 'https://gamewinner.aihelp.net/webchat/#',
+            appId: 'Gamewinner_pf_818667d93c7c4cd7974bd40d6b8c0e4f',
+            appKey: 'GAMEWINNER_app_68868b87956643f58f1d6e554f9e2643',
+            appName: 'Game Help',
+            language: 'en'
+        };
+        elvah5.init(conf);
+    }
+    var plat = checkDevicePlatform();
+    //设置pc下载地址
+    var dlUrls = {
+        ios: 'https://apps.apple.com/vn/app/id6443444765',
+        android: 'https://gwgamepkg.oss-cn-shanghai.aliyuncs.com/csjs2/csjs2lycs-release-v1.0.0-202303012300.apk',
+        wx:  null,
+        pc: 'https://yxdserver.52177.com/api/online/AQEHU1HMRGLM?#/enter_game',
+
+        telegram: 'https://t.me/idlegog_bot',
+        whitePaper: 'docs/whitePaper.pdf',
+        reddit: 'https://www.reddit.com/r/IdleFantasy_x',
+        discord: 'https://discord.com/channels/1298850233257824316/1298851346388221992',
+        twitter: 'https://x.com/idlefantasy_x',
+        telegramGrop: 'https://t.me/idlegog_bot'
+    }
+    var url = dlUrls[plat];
+    /*res == 1 点击 底部跳转html res==2中部按钮点击跳转  为 pc 点击跳转到指定html*/
+    function clickLink(event,res,type){
+        event && (event.cancelBubble = true)
+        let obj = { /*商店地址*/
+            ios: 'https://apps.apple.com/vn/app/id6443444765',
+            android: 'https://gwgamepkg.oss-cn-shanghai.aliyuncs.com/csjs2/csjs2lycs-release-v1.0.0-202303012300.apk',
+            wx: null,
+            pc: 'https://yxdserver.52177.com/api/online/AQEHU1HMRGLM?#/enter_game',
+
+            telegram: 'https://t.me/idlegog_bot',
+            whitePaper: 'docs/whitePaper.pdf',
+            reddit: 'https://www.reddit.com/r/IdleFantasy_x',
+            discord: 'https://discord.com/channels/1298850233257824316/1298851346388221992',
+            twitter: 'https://x.com/idlefantasy_x',
+            telegramGrop: 'https://t.me/idlegog_bot'
+        }
+        if(type == 'wx' && plat == 'pc'){
+          clickWxCode()
+          return
+        }
+
+        if(type == 'pc-ios'){ /*点击下载  mac 跳转到苹果商城 pc跳转到h5**/
+          type = navigator.platform.indexOf('Mac') > -1 ? 'ios' : 'android'
+          url = plat == 'pc'  ? dlUrls[type]  : obj[plat] ; /*pc 端 用type 移动端用plat*/
+        }else{ /*点击其它按钮*/
+          url = plat == 'pc'  ? dlUrls[type]  : obj[type] ;
+        }
+        window.open(url)
+    }
+
+    let ua = navigator.userAgent.toLowerCase()
+    function clickQQ(){ /*联系QQ客服*/
+      if(plat == 'pc'){
+        window.open('tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=2355488915')
+      }else if ((ua.indexOf('mqqbrowser')> -1 && ua.indexOf(" qq") < 0) && plat == 'ios'){/* 微信内置浏览器跳转  QQ浏览器跳转*/
+        window.open('mqqwpa://im/chat?chat_type=wpa&uin=2355488915&version=1&src_type=web&web_src=https://www.idlegog2.com/cn')
+      }else if (ua.match(/MicroMessenger/i) == 'micromessenger'){
+        $("#open").show()
+        $('#open').click(data=>{
+          $("#open").hide()
+        })
+        return
+      }else{
+        window.open('mqqapi://card/show_pslcard?src_type=internal&version=1&uin=2355488915&card_type=person&source=sharecard')
+      }
+      history.go(0)
+    }
+    //设置背景图
+    var imgUrls = ['bg_01.jpg', 'bg_02.jpg', 'bg_03.jpg'];
+    var idx = Math.round(Math.random() * (imgUrls.length-1));
+    var imgDiv = document.getElementById('bgDiv');
+    imgDiv.style.backgroundImage = "url('./images/" + imgUrls[idx] + "')";
+</script>
+
+<script>
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+        spaceBetween: 0,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+    });
+    var galleryTop = new Swiper('.gallery-top', {
+        spaceBetween: 0,
+        autoplay: true,
+        effect: 'fade',
+        fadeEffect: {
+            crossFade: true,
+        },
+        thumbs: {
+            swiper: galleryThumbs
+        }
+    });
+    var galleryThumbsImg = new Swiper('.animalImg', {
+        autoplay: true,
+        navigation:{
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        }
+    });
+</script>
+</html>
