@@ -31,8 +31,12 @@ img{ max-width:100%;}
 .header-r a{ display: inline-block; line-height: 44px; margin-left: 6px; }
 .header-r{ padding:20px 17px 0 0; }
 .img-box{ position: relative; }
+.logo-center {display: flex; flex-direction: column; justify-content: center;align-items: center;position: absolute;top: 10%; text-align: center;}
+.logo-center img {width: 1012px;height: auto;}
+.logo-caption {margin-top: 3%;background-color: rgba(0, 0, 0, 0.6);color: #ffffff;padding: 10px;border-radius: 20px;font-size: 24px;max-width: 70%;text-align: center;}
+
 .img-b{ position: absolute; left: 0; right: 0; bottom: 0; }
-.btn-box{ position: absolute; left: 0; right: 0; bottom: 25%; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+.btn-box{ position: absolute; left: 0; right: 0; top: 55%; display: flex; flex-direction: column; justify-content: center; align-items: center; }
 .btn-box .col-xs-text{color: white;text-align: center;font-size: 24px;max-width: 500px;text-shadow: 0 0 10px blue;}
 .btn-box .col-xs-6{
 	padding:0;
@@ -183,6 +187,8 @@ img{ max-width:100%;}
   .title img{ left: 50%;top:25px;margin-left: -65px; height: 80px;}
   .logoBottom {    margin-left: -65px;top: -4px}
   .logoBottom img{height: 80px;}
-  .btn-box{ position: absolute; left: 0; right: 0; top: 43%; display: flex; flex-direction: column; justify-content: center;  align-items: center; }
+  .btn-box{ position: absolute; left: 0; right: 0; top: 60%; display: flex; flex-direction: column; justify-content: center;  align-items: center; }
   .btn-box .col-xs-text{color: white;text-align: center;font-size: 18px;max-width: 60%;text-shadow: 0 0 10px blue;}
+  .logo-center img {width: 100%;height: auto;}
+  .logo-caption {font-size: 16px;}
 }
