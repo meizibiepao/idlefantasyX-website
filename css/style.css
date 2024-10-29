@@ -25,7 +25,7 @@ a:focus{ text-decoration:none !important; outline: none !important;}
 button:focus,button:hover,input:focus{ outline: none!important; }
 img{ max-width:100%;}
 .header{ height: 100px;  position: absolute; left: 0; top: 0; right: 0; z-index: 10; }
-.bg{ padding-top: 190px; background: url(../images/bg_03.jpg) center no-repeat; background-size: cover;  }
+.bg{ padding-top: 190px; background: url(../images/bg_01.jpg) center no-repeat; background-size: cover;  }
 .container{ width: 750px; }
 .logo{ padding-top: 5px;}
 .header-r a{ display: inline-block; line-height: 44px; margin-left: 6px; }
